@@ -1,0 +1,18 @@
+table tbody {
+  border: 1px solid #f0e6de;
+}
+
+table .tbody {
+  border: 1px solid #f0e6de;
+}
+
+table #tbody {
+  border: 1px solid #f0e6de;
+}
+
+body {
+  margin: 25px;
+  background-color: rgba(0, 0, 6, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

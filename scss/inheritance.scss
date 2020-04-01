@@ -1,0 +1,47 @@
+$element: button;
+$list: small, big;
+
+%shared1{
+	border:1px solid black;
+	padding: 10px;
+}
+
+.parent %shared2 .inner{
+	border: 3px dashed grey;
+}
+
+#parent ##{$element}{
+	background : red;
+
+	#child-one, .another {
+		background: green;
+		font-size: 20px;
+	}
+
+	#child-two {
+		padding: 20px;
+		.content{
+			color: white;
+		}
+	}
+
+	&.HasClass{
+		margin:40px;
+	}
+}
+
+.table1{
+	@extend %shared1;
+	line-height:1.5;
+}
+
+.table2{
+	@extend %shared2;
+}
+
+img, iframe, #{$list}{
+	@extend %shared1;
+}
+
+
+

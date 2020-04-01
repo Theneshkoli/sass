@@ -1,0 +1,24 @@
+$int:25px;
+$border-color: rgb(240,230,222);  //rgb color is converted into hex
+$color: rgba(0,0,6,0.5);          //whereas rgba isn't
+
+//you can select elements using following command
+
+$ele: tbody;
+
+table #{ $ele }{
+	border : 1px solid $border-color;
+}
+
+table .#{ $ele }{						//will select class_tbody
+	border : 1px solid $border-color;
+}
+
+table ##{ $ele }{						//will select id_tbody
+	border : 1px solid $border-color;
+}
+
+body{
+	margin:$int;
+	background-color:$color;
+}

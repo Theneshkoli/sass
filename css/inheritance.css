@@ -1,0 +1,31 @@
+img, iframe, small, big, .table1 {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.parent .table2 .inner {
+  border: 3px dashed grey;
+}
+
+#parent #button {
+  background: red;
+}
+#parent #button #child-one, #parent #button .another {
+  background: green;
+  font-size: 20px;
+}
+#parent #button #child-two {
+  padding: 20px;
+}
+#parent #button #child-two .content {
+  color: white;
+}
+#parent #button.HasClass {
+  margin: 40px;
+}
+
+.table1 {
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=inheritance.css.map */
