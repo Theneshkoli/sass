@@ -1,0 +1,86 @@
+
+$color : blue;
+
+@mixin number1(){
+	background: orangered;
+	padding: 30px;
+	margin: 4em;
+}
+
+//mixin with argumnets
+
+@mixin number2($argOne, $argTwo){
+	background: $argOne;
+	line-height: $argTwo;
+}
+
+//with selector inheritance
+
+@mixin number3(){
+	#container{
+		padding : 20px 30px;
+		margin	: 10px;
+	}
+}
+
+@mixin number4($shadow){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+	 box-shadow: $shadow;
+}
+
+//proving list of argument (here we can provide list in future and hence putting dot dot dot)
+@mixin number5($shadow...){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+	 box-shadow: $shadow;
+}
+
+@mixin keyframes($keyframe_name){
+
+	@-webkit-keyframes #{$keyframe_name}{
+		@content;
+	}
+	@-moz-keyframes #{$keyframe_name}{
+		@content;
+	}
+	@-o-keyframes #{$keyframe_name}{
+		@content;
+	}
+	@keyframes #{$keyframe_name}{
+		@content;
+	}
+	
+}
+
+ 
+aside{
+
+	border:1px solid blue;
+	
+	@include number1();
+}
+
+main{
+	@include number2($color, 2.6);
+}
+
+body{
+	@include number3();
+}
+
+.card{
+	@include number4(1px 2px 3px rgba(0,0,0,0.3));
+}
+
+.jumbotron{
+	@include number1();
+	@include number5(1px 2px 3px rgba(0,0,0,0.3), 2px 5px 10px grey);
+}
+
+@include keyframes(myAnimation){
+	0% { opacity : 0}
+	100% {opacity : 1}
+}
