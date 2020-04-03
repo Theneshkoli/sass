@@ -1,0 +1,68 @@
+aside {
+  border: 1px solid blue;
+  background: orangered;
+  padding: 30px;
+  margin: 4em;
+}
+
+main {
+  background: blue;
+  line-height: 2.6;
+}
+
+body #container {
+  padding: 20px 30px;
+  margin: 10px;
+}
+
+.card {
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron {
+  background: orangered;
+  padding: 30px;
+  margin: 4em;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 2px 5px 10px grey;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 2px 5px 10px grey;
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 2px 5px 10px grey;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 2px 5px 10px grey;
+}
+
+@-webkit-keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=mixins.css.map */
